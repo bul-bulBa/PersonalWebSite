@@ -1,7 +1,6 @@
 import {useState, useRef, useEffect} from 'react'
 
-export const useWheel = () => {
-    const allPages = 3
+export const useWheel = (count: number) => {
     const [page, setPage] = useState(1)
     const locked = useRef(false)
 
@@ -10,7 +9,7 @@ export const useWheel = () => {
             if(locked.current) return
             locked.current = true
 
-            if(e.deltaY > 0) setPage(p => Math.min(p + 1, allPages))
+            if(e.deltaY > 0) setPage(p => Math.min(p + 1, count))
             else setPage(p => Math.max(p - 1, 1))
             
             setTimeout(() => {
