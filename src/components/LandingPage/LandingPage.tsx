@@ -1,9 +1,10 @@
 import { useWheel } from "@/lib/useWheel"
-import AboutMe from "./AboutMe"
+import AboutMe from "./about-me/AboutMe"
 import Project from "./Project"
 import Contacts from "./Contacts"
 import gugugaga from '../../assets/gugu-gagaScreen.png'
 import clearDev from '../../assets/clearDevScreen.png'
+import Slide from "./about-me/Slide"
 
 const LandingPage = () => {
     const page = useWheel(4)
@@ -14,6 +15,8 @@ const LandingPage = () => {
             {page === 2 && <Project text="gugu gaga site" img={gugugaga} />}
             {page === 3 && <Project text="clearDevSite" img={clearDev} />}
             {page === 4 && <Contacts />}
+
+            <Slide />
         </div>
     )
 }

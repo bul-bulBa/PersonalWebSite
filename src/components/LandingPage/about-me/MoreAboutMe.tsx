@@ -3,12 +3,15 @@ import { Smile } from 'lucide-react'
 const MoreAboutMe = () => {
 
     return (
-        <div>
-            My name is Svyatoslav, I am 15 years old (10th grade). 
-            I have been studying front-end development since 8th grade at <a href="https://profstepschool.com/school">ProfStep</a> courses.
-            Last summer, I started learning React on my own, creating a social network called gugu-gaga (the name of the repository on GitHub), as well as several smaller projects for practice.
-            I am looking for my first job or internship as a React front-end developer. It is important for me to gain real experience — I am not afraid of challenges and hard work.
-            I am open to discussing any terms <Smile />
+        <div className='bg-background text-foreground p-10'>
+            <div className='text-xl'>More about me</div>
+            <div>
+                My name is Svyatoslav, I am 15 years old (10th grade).
+                I have been studying front-end development since 8th grade at <a href="https://profstepschool.com/school">ProfStep</a> courses.
+                Last summer, I started learning React on my own, creating a social network called gugu-gaga (the name of the repository on GitHub), as well as several smaller projects for practice.
+                I am looking for my first job or internship as a React front-end developer. It is important for me to gain real experience — I am not afraid of challenges and hard work.
+                I am open to discussing any terms <Smile />
+            </div>
         </div>
     )
 }
