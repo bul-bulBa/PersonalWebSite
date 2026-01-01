@@ -319,7 +319,8 @@ a {
 .flip-side {
   position: absolute;
   backface-visibility: hidden;
-  border: 1px solid black;
+  background-color: var(--secondary);
+  border: 1px solid var(--border);
   border-radius: 15px;
   padding: 20px;
 }
