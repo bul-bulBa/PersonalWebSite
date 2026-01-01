@@ -18,7 +18,7 @@ const Slide = () => {
                 </span>
 
 
-                <div className={`w-[80vw] h-full bg-background`}>
+                <div className={`w-[80vw] h-full bg-background p-10`}>
                     <MoreAboutMe />
                 </div>
             </div>

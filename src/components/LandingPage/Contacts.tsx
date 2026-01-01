@@ -4,7 +4,7 @@ const Contacts = () => {
 
     return (
         <div className="animate-fadeInLeft 
-        w-full h-full p-20 flex flex-col gap-5">
+        w-full h-full p-20 flex flex-col gap-5 text-xl">
             <div className="text-xl font-bold">My contacts:</div>
             <span>Location: Ternopil, Ukraine</span>
             <span>tel: +380687630374</span>

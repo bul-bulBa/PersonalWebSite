@@ -181,6 +181,7 @@
   }
 }
 
+
 /* DEFAULT THEME */
 
 /* :root {
@@ -319,8 +320,8 @@ a {
 .flip-side {
   position: absolute;
   backface-visibility: hidden;
-  background-color: var(--secondary);
-  border: 1px solid var(--border);
+  background-color: var(--card);
+  border: 2px solid var(--border);
   border-radius: 15px;
   padding: 20px;
 }
@@ -391,6 +392,5 @@ a {
 }
 
 .transform-right { transform: translateX(80vw); }
-
 
 

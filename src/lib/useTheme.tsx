@@ -14,9 +14,9 @@ export const useTheme = () => {
 
     useEffect(() => {
         let theme = localStorage.getItem('theme') as 'dark' | 'light' | '' | undefined | null
-        
+
         console.log('SYSYTEM THEME', window.matchMedia('(prefers-color-scheme: dark)').matches)
-        
+
         if (!theme) setSystemTheme()
         if (theme === 'dark') {
             document.documentElement.classList.add('dark')
@@ -27,6 +27,7 @@ export const useTheme = () => {
     }, [])
 
     const changeTheme = () => {
+
         console.log('clicked')
         if (theme === 'dark') {
             document.documentElement.classList.remove('dark')
@@ -38,9 +39,7 @@ export const useTheme = () => {
             localStorage.setItem('theme', 'dark')
             setTheme('dark')
         }
-
-        console.log(theme, localStorage.getItem('theme'))
     }
 
-    return changeTheme
+    return { theme, changeTheme }
 }
