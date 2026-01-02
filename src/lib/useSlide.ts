@@ -5,15 +5,6 @@ export const useSlide = () => {
     const isLock = useRef(false)
     const [isView, setIsView] = useState(false)
 
-    // useEffect(() => {
-    //     if(isView) document.body.style.overflow = 'hidden';
-    //     else document.body.style.overflow = '';
-    //     console.log(isView)
-    //     return () => {
-    //         document.body.style.overflow = '';
-    //     };
-    // }, [isView]);
-
     const handleView = () => {
         if (isLock.current) return
         firstLoad.current = false
