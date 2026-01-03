@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import type { stateType } from "../StoreConfig";
 
-type aboutMeType = {
+export type aboutMeType = {
     name: string,
     title: string,
     moreAboutMe: string

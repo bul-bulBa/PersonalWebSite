@@ -1,4 +1,4 @@
-import { ChevronLeft, Divide } from "lucide-react"
+import { ChevronLeft } from "lucide-react"
 import { useSlide } from '../../../lib/useSlide'
 import MoreAboutMe from "./MoreAboutMe"
 

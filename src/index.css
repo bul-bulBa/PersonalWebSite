@@ -300,6 +300,11 @@ a {
   text-decoration-line: underline;
 }
 
+.video {
+  width: 100%;
+  max-width: 300px;
+}
+
 /* flip card */
 .perspective {
   perspective: 1000px;
@@ -310,7 +315,12 @@ a {
   transition: transform 0.5s ease;
   transform-style: preserve-3d;
   width: 20rem;
-  height: 15rem;
+}
+
+@media (max-width: 450px) {
+  .flip-card  {
+    width: 100%;
+  }
 }
 
 .flip-card.flipped {

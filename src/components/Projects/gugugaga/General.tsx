@@ -1,17 +1,18 @@
-import bullshit from '../../../assets/bullshit.mp4'
+import AllFunctional from '@/assets/AllFunctional.mp4'
 
-const General = () => {
+type propsType = {
+    about: string,
+    howToStart: string
+}
+
+const General = ({about, howToStart}: propsType) => {
+    
 
     return (
         <div className='flex flex-col gap-5 text-lg'>
-            <div>
-                Social network with a post feed and 1-to-1 messaging
-            </div>
-            <div>
-                If you want to look this project, you must clone repo "gugu-gaga" and switch to dev branch.
-                Also to start the project, you must have redis and node.js
-            </div>
-            <video src={bullshit} controls></video>
+            <div>{about}</div>
+            <div dangerouslySetInnerHTML={{ __html: howToStart}}></div>
+            <video src={AllFunctional} controls></video>
         </div>
     )
 }

@@ -1,6 +1,7 @@
-import { useAppState } from "@/store/StoreConfig"
 import { selectAboutMeEN, selectAboutMeUA } from "@/store/reducers/moreAboutMe"
-import { selectLanguage } from '@/store/reducers/language'
+import { selectOtherFlipEN, selectOtherFlipUA } from "@/store/reducers/other"
+import { useSelectText } from "@/lib/useSelectText"
+import type { aboutMeType } from "@/store/reducers/moreAboutMe"
 import Stack from "./Stack"
 import MoreAboutMe from "./MoreAboutMe"
 
@@ -12,10 +13,8 @@ type propsType = {
 }
 
 const AboutMe = ({ size }: propsType) => {
-    const lang = useAppState(selectLanguage)
-    const text = lang === 'ua'
-    ? useAppState(selectAboutMeUA)
-    : useAppState(selectAboutMeEN)
+    const text = useSelectText<aboutMeType>(selectAboutMeEN, selectAboutMeUA)
+    const flip = useSelectText<string>(selectOtherFlipEN, selectOtherFlipUA)
 
     return (
         <div className='h-[100vh] w-[100vw] p-20 relative
@@ -25,7 +24,7 @@ const AboutMe = ({ size }: propsType) => {
                 <span className="col-start-1 col-span-2 row-start-1 text-3xl font-bold">{text.name}</span>
 
                 <div className="perspective animate-fadeInLeft col-start-1 row-start-2">
-                    <Stack />
+                    <Stack flip={flip} />
                 </div>
 
             {size.width && size.width > 1024 &&

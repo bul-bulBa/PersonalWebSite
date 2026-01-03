@@ -1,12 +1,9 @@
-import { useAppState } from "@/store/StoreConfig"
 import { selectAboutMeEN, selectAboutMeUA } from "@/store/reducers/moreAboutMe"
-import { selectLanguage } from '@/store/reducers/language'
+import type { aboutMeType } from '@/store/reducers/moreAboutMe'
+import { useSelectText } from "@/lib/useSelectText"
 
 const MoreAboutMe = () => {
-    const lang = useAppState(selectLanguage)
-    const text = lang === 'ua'
-    ? useAppState(selectAboutMeUA)
-    : useAppState(selectAboutMeEN)
+    const text = useSelectText<aboutMeType>(selectAboutMeEN, selectAboutMeUA)
 
     return (
         <div className='bg-background text-foreground'>
