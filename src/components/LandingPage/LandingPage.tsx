@@ -11,7 +11,7 @@ import GuguGaga from '../Projects/gugugaga/GuguGaga'
 const LandingPage = () => {
     const page = useWheel(4)
     const size = useWindowSize()
-    console.log(size.width)
+    
     return (
         <div className="">
             <Nav />

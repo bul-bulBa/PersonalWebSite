@@ -321,6 +321,10 @@ a {
   .flip-card  {
     width: 100%;
   }
+  .flip-side {
+    width: 100% !important;
+    height: auto !important;
+  }
 }
 
 .flip-card.flipped {
@@ -334,11 +338,18 @@ a {
   border: 2px solid var(--border);
   border-radius: 15px;
   padding: 20px;
+  width: 20rem;
+  height: 27rem;
 }
 
 .back-side {
   transform: rotateY(180deg);
 }
+
+
+/* .flip-card.flipped .flip-side:not(.back-side) { */
+  /* opacity: 0; */
+/* } */
 
 /* ANIMATIONS */
 

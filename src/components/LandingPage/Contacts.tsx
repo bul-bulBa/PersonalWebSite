@@ -8,7 +8,7 @@ const Contacts = () => {
 
     return (
         <div className="animate-fadeInLeft 
-        w-full h-full p-20 flex flex-col gap-5 sm:text-xl">
+        w-full h-full p-20 flex flex-col gap-5 [@media(min-width:450px)]:text-xl">
             <div className="text-xl font-bold">{text.contacts}:</div>
             <span>{text.location}</span>
             <span>{text.tel} +380687630374</span>
