@@ -14,7 +14,7 @@ const GuguGaga = () => {
     const [view, setView] = useState(false)
 
     return (
-        <div className="w-screen min-h-screen p-20 animate-fadeInLeft">
+        <div className="container animate-fadeInLeft">
             { size.width && size.width > 1024 && 
             <div className='grid grid-cols-2 gap-20'>
                 <TestCases tabs={text.tabs} /> 

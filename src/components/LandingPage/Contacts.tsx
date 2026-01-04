@@ -7,8 +7,8 @@ const Contacts = () => {
     const text = useSelectText<contactsType>(selectOtherContactsEn, selectOtherContactsUA)
 
     return (
-        <div className="animate-fadeInLeft 
-        w-full h-full p-20 flex flex-col gap-5 [@media(min-width:450px)]:text-xl">
+        <div className="container animate-fadeInLeft 
+        flex flex-col gap-5 [@media(min-width:450px)]:text-xl">
             <div className="text-xl font-bold">{text.contacts}:</div>
             <span>{text.location}</span>
             <span>{text.tel} +380687630374</span>

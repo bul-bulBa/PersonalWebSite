@@ -13,7 +13,7 @@ const LandingPage = () => {
     const size = useWindowSize()
     
     return (
-        <div className="">
+        <div className="w-[100vw] h-[100vh] relative overflow-hidden">
             <Nav />
 
             {page === 1 && <AboutMe size={size} />}

@@ -7,7 +7,7 @@ const ClearDev = () => {
     const text = useSelectText<clearDevType>(selectClearDevEN, selectClearDevUA)
 
     return (
-        <div className='w-[100vw] h-[100vh] p-20 animate-fadeInLeft flex flex-col gap-5 text-lg'>
+        <div className='container animate-fadeInLeft flex flex-col gap-5 text-lg'>
             <div>{text.about}</div>
             <div dangerouslySetInnerHTML={{ __html: text.toStartProject}} />
             <video src={clearDev} controls className='lg:w-2/3'></video>

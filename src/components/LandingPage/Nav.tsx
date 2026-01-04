@@ -15,8 +15,7 @@ const Nav = () => {
     const changeLanguage = useLanguage()
 
     return (
-        <div className="fixed top-5 left-1/2
-        bg-background rounded-full z-2
+        <div className="absolute top-5 left-1/2 -translate-x-1/2 z-2
         flex items-center gap-5">
             <span onClick={changeTheme}
                 className=''>

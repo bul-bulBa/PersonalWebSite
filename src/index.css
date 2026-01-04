@@ -305,6 +305,18 @@ a {
   max-width: 300px;
 }
 
+.container {
+  width: 100vw;
+  height: 100vh;
+  padding: 5rem;
+}
+
+@media (max-width: 450px) {
+  .container {
+    padding: 5rem 2rem 2rem; /* top right/left bottom */
+  }
+}
+
 /* flip card */
 .perspective {
   perspective: 1000px;

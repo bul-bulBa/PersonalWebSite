@@ -17,7 +17,7 @@ const AboutMe = ({ size }: propsType) => {
     const flip = useSelectText<string>(selectOtherFlipEN, selectOtherFlipUA)
 
     return (
-        <div className='h-[100vh] w-[100vw] p-20 relative
+        <div className='container relative
         flex flex-col gap-10
         lg:grid grid-cols-[25rem_1fr] grid-rows-[5rem_1fr]'>
 
