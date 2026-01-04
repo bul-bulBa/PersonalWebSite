@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react'
-import { setLanguage } from '@/store/reducers/language'
+import { setLanguage } from '@/store/reducers/system'
 import { useAppDispatch } from '@/store/StoreConfig'
 
 export type langType = 'ua' | 'en' | '' 

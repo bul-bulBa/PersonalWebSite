@@ -2,6 +2,7 @@ import { ChevronLeft } from "lucide-react"
 import { useSlide } from '../../../lib/useSlide'
 import MoreAboutMe from "./MoreAboutMe"
 
+
 const Slide = () => {
     const { isView, firstLoad, handleView } = useSlide()
 

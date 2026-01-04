@@ -2,14 +2,14 @@ import { configureStore, combineReducers } from '@reduxjs/toolkit'
 import { useDispatch, useSelector } from 'react-redux'
 import type { TypedUseSelectorHook } from 'react-redux'
 import AboutMeReducer from './reducers/moreAboutMe'
-import LanguageReducer from './reducers/language'
+import SystemReducer from './reducers/system'
 import GuguGagaReducer from './reducers/gugugaga'
 import ClearDevReducer from './reducers/cleardev'
 import OtherReducer from './reducers/other'
 
 const rootReducer = combineReducers({
     aboutMe: AboutMeReducer,
-    language: LanguageReducer,
+    system: SystemReducer,
     gugugaga: GuguGagaReducer,
     cleardev: ClearDevReducer,
     other: OtherReducer,

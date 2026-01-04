@@ -1,6 +1,6 @@
 import type { stateType } from "@/store/StoreConfig";
 import { useAppState } from "@/store/StoreConfig";
-import { selectLanguage } from "@/store/reducers/language";
+import { selectLanguage } from "@/store/reducers/system";
 
 export const useSelectText = <T>(
     selectEn: (state: stateType) => T, 

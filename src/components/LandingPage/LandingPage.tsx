@@ -9,11 +9,12 @@ import ClearDev from "../Projects/ClearDev";
 import GuguGaga from '../Projects/gugugaga/GuguGaga'
 
 const LandingPage = () => {
-    const page = useWheel(4)
+    const {page, swipeFuncs} = useWheel(4)
     const size = useWindowSize()
     
     return (
-        <div className="w-[100vw] h-[100vh] relative overflow-hidden">
+        <div className="w-[100vw] h-[100vh] relative overflow-hidden touch-none"
+        onPointerDown={swipeFuncs.downSwipe} onPointerUp={swipeFuncs.upSwipe}>
             <Nav />
 
             {page === 1 && <AboutMe size={size} />}

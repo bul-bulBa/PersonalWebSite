@@ -4,7 +4,7 @@ import {
 } from "@/components/ui/select"
 import { Sun, Moon } from 'lucide-react'
 import { useAppState } from "@/store/StoreConfig"
-import { selectLanguage } from "@/store/reducers/language"
+import { selectLanguage } from "@/store/reducers/system"
 import type { langType } from "@/lib/useLanguage"
 import { useTheme } from '../../lib/useTheme'
 import { useLanguage } from '@/lib/useLanguage'
